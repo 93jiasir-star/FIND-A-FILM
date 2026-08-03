@@ -3,14 +3,14 @@ const platforms = [
   { group: '影札记', note: '影迷评价与评分', icon: 'I', name: 'IMDb（需要外网）', meta: '全球影视资料与评分', url: q => `https://www.imdb.com/find/?q=${q}` },
   { group: '浮光间', note: '在线观影', icon: 'L', name: 'Libvio', meta: '在线观影与下载', url: q => `https://libviobd.com/search/-------------.html?wd=${q}` },
   { group: '浮光间', note: '在线观影', icon: 'P', name: 'PKAVI', meta: '在线观影与下载', url: q => `https://www.pkavi.com/vs/-------------.html?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: 'N', name: '奈飞工厂', meta: '站内搜索', url: q => `https://www.netflixgc.com/vodsearch/-------------.html?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: '独', name: '独播库', meta: '站内搜索', url: q => `https://www.dbku.tv/vodsearch/-------------.html?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: 'P', name: 'PPnix', meta: '站内搜索', url: q => `https://www.ppnix.com/cn/search/${q}--.html` },
-  { group: '浮光间', note: '在线观影', icon: '泥', name: '泥视频', meta: '站内搜索', url: q => `https://www.nivod.vip/s/-------------/?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: '爱', name: '爱看机器人', meta: '站内搜索', url: q => `https://www1.aikanbot.com/search?q=${q}` },
-  { group: '云上集', note: '网盘资源', icon: '盘', name: '盘搜', meta: '自动搜索夸克网盘资源', url: q => `https://pansou.de/search?q=${q}&platform=quark` },
-  { group: '云上集', note: '网盘资源', icon: '追', name: '追剧网', meta: '自动搜索影视网盘资源', url: q => `https://www.zhuiju.us/s/${q}.html` },
-  { group: '云上集', note: '网盘资源', icon: 'K', name: 'KKSO', meta: '自动搜索夸克网盘资源', url: q => `https://kkso.net/s/${q}.html` },
+  { group: '浮光间', note: '在线观影', icon: 'N', name: '奈飞工厂', meta: '最新美剧，无广告（需梯子）', url: q => `https://www.netflixgc.com/vodsearch/-------------.html?wd=${q}` },
+  { group: '浮光间', note: '在线观影', icon: '独', name: '独播库', meta: '页面无广告，纯净', url: q => `https://www.dbku.tv/vodsearch/-------------.html?wd=${q}` },
+  { group: '浮光间', note: '在线观影', icon: 'P', name: 'PPnix', meta: '热门在线影视，速度快／纯净／无广告', url: q => `https://www.ppnix.com/cn/search/${q}--.html` },
+  { group: '浮光间', note: '在线观影', icon: '泥', name: '泥视频', meta: '热门国剧，更新快，无广告', url: q => `https://www.nivod.vip/s/-------------/?wd=${q}` },
+  { group: '浮光间', note: '在线观影', icon: '爱', name: '爱看机器人', meta: '全网热门的电影和电视剧榜单', url: q => `https://www1.aikanbot.com/search?q=${q}` },
+  { group: '云上集', note: '网盘资源', icon: '盘', name: '盘搜', meta: '纯净的夸克网盘资源搜索引擎', url: q => `https://pansou.de/search?q=${q}&platform=quark` },
+  { group: '云上集', note: '网盘资源', icon: '追', name: '追剧网', meta: '国内外热门影视网盘资源搜索', url: q => `https://www.zhuiju.us/s/${q}.html` },
+  { group: '云上集', note: '网盘资源', icon: 'K', name: 'KKSO', meta: '夸克百度网盘搜索', url: q => `https://kkso.net/s/${q}.html` },
   { group: '云上集', note: '网盘资源', icon: '资', name: '资源库', meta: '打开后自行输入访问密码', url: () => 'http://xccji.top/app/index.html?id=200317xlb' }
 ];
 
