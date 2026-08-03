@@ -30,6 +30,41 @@
     <section id="results" class="results" aria-live="polite"></section>
   </main>
   <footer><span>拾影</span> · FIND A FILM · 2026</footer>
+  <script src="app.js?v=15"></script>
+</body>
+</html>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3ede2">
+  <meta name="description" content="找电影：一次搜索，在评分、资料与观看平台继续探索。">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <title>拾影 · FIND A FILM</title>
+  <link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="brand-row"><span class="brand-mark">F</span><span class="brand-chinese">拾影</span><span class="brand-divider" aria-hidden="true"></span><span>FIND A FILM</span></div>
+      <p class="hero-whisper">借一方银幕，见万种人生</p>
+    </header>
+
+    <form id="searchForm" class="search-box">
+      <label class="sr-only" for="filmInput">电影、导演或演员</label>
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <input id="filmInput" type="search" placeholder="搜索片名" autocomplete="off" autofocus>
+      <button id="clearInput" class="clear-input" type="button" aria-label="清除搜索内容" hidden><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 2 10 10M10 2 2 10"/></svg></button>
+      <button type="submit">开始找片 <span>→</span></button>
+    </form>
+    <p class="search-hint">拾着光影，照见人间未见处。</p>
+    <section id="recentSearches" class="recent-searches" aria-label="最近搜索" hidden></section>
+    <section id="results" class="results" aria-live="polite"></section>
+  </main>
+  <footer><span>拾影</span> · FIND A FILM · 2026</footer>
   <script src="app.js?v=14"></script>
 </body>
 </html>
