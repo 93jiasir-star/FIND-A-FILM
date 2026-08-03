@@ -1,6 +1,6 @@
 const platforms = [
   { group: '影札记', note: '影迷评价与评分', icon: '豆', name: '豆瓣电影', meta: '评分、短评与影评', url: q => `https://search.douban.com/movie/subject_search?search_text=${q}` },
-  { group: '影札记', note: '影迷评价与评分', icon: 'I', name: 'IMDb（需要外网）', meta: '全球影视资料与评分', url: q => `https://www.imdb.com/find/?q=${q}` },
+  { group: '影札记', note: '影迷评价与评分', icon: 'I', name: 'IMDb', meta: '全球影视资料与评分（需梯子）', url: q => `https://www.imdb.com/find/?q=${q}` },
   { group: '浮光间', note: '在线观影', icon: 'L', name: 'Libvio', meta: '在线观影与下载', url: q => `https://libviobd.com/search/-------------.html?wd=${q}` },
   { group: '浮光间', note: '在线观影', icon: 'P', name: 'PKAVI', meta: '在线观影与下载', url: q => `https://www.pkavi.com/vs/-------------.html?wd=${q}` },
   { group: '浮光间', note: '在线观影', icon: 'N', name: '奈飞工厂', meta: '最新美剧，无广告（需梯子）', url: q => `https://www.netflixgc.com/vodsearch/-------------.html?wd=${q}` },
