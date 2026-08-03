@@ -8,10 +8,10 @@ const platforms = [
   { group: '浮光间', note: '在线观影', icon: 'P', name: 'PPnix', meta: '热门在线影视，速度快／纯净／无广告', url: q => `https://www.ppnix.com/cn/search/${q}--.html` },
   { group: '浮光间', note: '在线观影', icon: '泥', name: '泥视频', meta: '热门国剧，更新快，无广告', url: q => `https://www.nivod.vip/s/-------------/?wd=${q}` },
   { group: '浮光间', note: '在线观影', icon: '爱', name: '爱看机器人', meta: '全网热门的电影和电视剧榜单', url: q => `https://www1.aikanbot.com/search?q=${q}` },
+  { group: '云上集', note: '网盘资源', icon: '资', name: '资源库', meta: '7 7 8 8', url: () => 'http://xccji.top/app/index.html?id=200317xlb' },
   { group: '云上集', note: '网盘资源', icon: '盘', name: '盘搜', meta: '纯净的夸克网盘资源搜索引擎', url: q => `https://pansou.de/search?q=${q}&platform=quark` },
   { group: '云上集', note: '网盘资源', icon: '追', name: '追剧网', meta: '国内外热门影视网盘资源搜索', url: q => `https://www.zhuiju.us/s/${q}.html` },
-  { group: '云上集', note: '网盘资源', icon: 'K', name: 'KKSO', meta: '夸克百度网盘搜索', url: q => `https://kkso.net/s/${q}.html` },
-  { group: '云上集', note: '网盘资源', icon: '资', name: '资源库', meta: '7 7 8 8', url: () => 'http://xccji.top/app/index.html?id=200317xlb' }
+  { group: '云上集', note: '网盘资源', icon: 'K', name: 'KKSO', meta: '夸克百度网盘搜索', url: q => `https://kkso.net/s/${q}.html` }
 ];
 
 const form = document.querySelector('#searchForm');
