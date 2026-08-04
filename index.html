@@ -6,10 +6,10 @@
   <meta name="theme-color" content="#f3ede2">
   <meta name="description" content="找电影：一次搜索，在评分、资料与观看平台继续探索。">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="icon" href="icon-1024.png" type="image/png">
+  <link rel="apple-touch-icon" href="icon-1024.png">
   <title>拾影 · FIND A FILM</title>
-  <link rel="stylesheet" href="style.css?v=7">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
   <main class="app-shell">
@@ -21,7 +21,7 @@
     <form id="searchForm" class="search-box">
       <label class="sr-only" for="filmInput">电影、导演或演员</label>
       <span class="search-icon" aria-hidden="true">⌕</span>
-      <input id="filmInput" type="search" placeholder="搜索片名" autocomplete="off" autofocus>
+      <input id="filmInput" type="search" placeholder="搜索片名" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" enterkeyhint="search">
       <button id="clearInput" class="clear-input" type="button" aria-label="清除搜索内容" hidden><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2 2 10 10M10 2 2 10"/></svg></button>
       <button type="submit">开始找片 <span>→</span></button>
     </form>
