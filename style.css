@@ -60,7 +60,7 @@ footer { padding:22px 0 calc(21px + env(safe-area-inset-bottom)); color:#85866d;
 }
 
 @media (min-width:780px) and (min-height:801px) {
-  footer { transform:translateY(-27px); }
+  body:has(.results.show) footer { transform:translateY(-27px); }
 }
 
 /* Keep FIND A BOOK's paper-and-line visual language, with only the requested desktop placement. */
