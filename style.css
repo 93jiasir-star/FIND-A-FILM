@@ -16,8 +16,8 @@ input { min-width:0; flex:1; padding:9px 0; border:0; outline:0; color:var(--ink
 .results { display:none; }.results.show { display:block; }.result-intro { margin:41px 0 18px; padding-bottom:14px; border-bottom:1px solid var(--ink); }.result-intro .eyebrow { color:var(--coral); font:500 10px 'DM Mono',monospace; letter-spacing:.12em; }.result-intro h2 { margin:6px 0 0; font-size:24px; letter-spacing:-.06em; word-break:break-all; }.platform-section + .platform-section { margin-top:27px; }.platform-label { display:flex; align-items:baseline; gap:7px; margin-bottom:9px; white-space:nowrap; }.platform-label-title { color:var(--green); font:600 12px/1 'Noto Serif SC',serif; letter-spacing:.12em; }.platform-label-dot { color:var(--gold); font-size:12px; }.platform-label-note { color:var(--green); font:500 10px/1 'DM Mono','Noto Serif SC',sans-serif; letter-spacing:.05em; }.platform-list { border-top:1px solid var(--line); }.platform-card { display:flex; align-items:center; width:100%; gap:11px; min-height:62px; border:0; border-bottom:1px solid var(--line); padding:10px 3px; color:var(--ink); background:transparent; text-align:left; font:inherit; cursor:pointer; -webkit-appearance:none; appearance:none; }.platform-card:active { color:var(--coral); }.platform-icon { position:relative; display:grid; place-items:center; width:28px; height:28px; border-radius:50%; color:var(--green); background:var(--leaf); font:600 13px 'Noto Serif SC',serif; transition:color 170ms ease,background 170ms ease,border-radius 170ms ease,transform 170ms ease; }.platform-icon-glyph { display:block; line-height:1; transform:translateY(-1px); }.platform-icon-latin { font:700 12px 'Noto Serif SC',serif; letter-spacing:0; }.platform-icon-bean { font-weight:700; }.platform-card:hover .platform-icon,.platform-card:focus-visible .platform-icon { border-radius:50%; color:#fffdf8; background:#a74d3d; transform:none; }.platform-name { font-size:15px; font-weight:600; }.platform-meta { display:block; margin-top:1px; color:var(--faint); font-size:11px; }
 footer { padding:22px 0 calc(21px + env(safe-area-inset-bottom)); color:#85866d; border-top:1px solid var(--line); text-align:center; font:9px 'DM Mono',monospace; letter-spacing:.12em; } footer span { color:var(--green); font:500 11px 'Noto Serif SC',serif; letter-spacing:.08em; }.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); } @keyframes hero-enter { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
 @media (min-width:780px) {
-  .app-shell { width:min(100% - 96px,1280px); padding:16px 0 40px; }
-  .hero { width:min(100%,1040px); margin:0 auto; padding:0 2px 38px; }
+  .app-shell { width:min(100% - 96px,1280px); padding:16px 0 66px; }
+  .hero { width:min(100%,1040px); margin:0 auto; padding:0 2px 48px; }
   .brand-row { gap:13px; font-size:14px; letter-spacing:.17em; }
   .brand-mark { width:36px; height:36px; font-size:16px; }
   .brand-chinese { font-size:20px; letter-spacing:.18em; }
@@ -32,12 +32,12 @@ footer { padding:22px 0 calc(21px + env(safe-area-inset-bottom)); color:#85866d;
   .recent-searches { width:min(100%,1040px); margin:20px auto 0; }
   .recent-title { font-size:12px; }
   .history-query { font-size:14px; }
-  .results.show { display:grid; width:min(100%,1180px); margin:10px auto 0; grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:24px; row-gap:12px; }
-  .result-intro { grid-column:1 / -1; margin:0; padding-bottom:8px; }
+  .results.show { display:grid; width:min(100%,1180px); margin:0 auto; grid-template-columns:repeat(4,minmax(0,1fr)); column-gap:24px; row-gap:12px; }
+  .result-intro { grid-column:1 / -1; margin:40px 0 0; padding-bottom:13px; }
   .result-intro .eyebrow { font-size:10px; }
   .result-intro h2 { margin-top:6px; font-size:30px; }
-  .platform-column { min-width:0; height:270px; }
-  .platform-column-left { display:flex; flex-direction:column; justify-content:space-between; height:290px; }
+  .platform-column { min-width:0; height:clamp(270px,29vh,320px); }
+  .platform-column-left { display:flex; flex-direction:column; justify-content:space-between; height:clamp(270px,29vh,320px); }
   .platform-section + .platform-section { margin-top:0; }
   .platform-label { gap:6px; margin-bottom:6px; }
   .platform-label-title { font-size:13px; }
@@ -49,6 +49,12 @@ footer { padding:22px 0 calc(21px + env(safe-area-inset-bottom)); color:#85866d;
   .platform-meta { margin-top:1px; font-size:11px; }
   .platform-list-split { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:24px; }
   footer { width:min(100% - 96px,1280px); margin:0 auto; }
+}
+
+@media (min-width:780px) and (max-height:800px) {
+  .app-shell { padding-bottom:32px; }
+  .hero { padding-bottom:38px; }
+  .result-intro { margin-top:22px; }
 }
 
 /* Keep FIND A BOOK's paper-and-line visual language, with only the requested desktop placement. */
