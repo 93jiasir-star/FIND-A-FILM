@@ -1,17 +1,23 @@
 const platforms = [
   { group: '影札记', note: '影迷评价与评分', icon: '豆', name: '豆瓣电影', meta: '评分、短评与影评', url: q => `https://search.douban.com/movie/subject_search?search_text=${q}` },
   { group: '影札记', note: '影迷评价与评分', icon: 'I', name: 'IMDb', meta: '全球影视资料与评分（需梯子）', url: q => `https://www.imdb.com/find/?q=${q}` },
-  { group: '浮光间', note: '在线观影', icon: 'L', name: 'Libvio', meta: '在线观影与下载', url: q => `https://libviobd.com/search/-------------.html?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: 'P', name: 'PKAVI', meta: '在线观影与下载', url: q => `https://www.pkavi.com/vs/-------------.html?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: 'N', name: '奈飞工厂', meta: '最新美剧，无广告（需梯子）', url: q => `https://www.netflixgc.com/vodsearch/-------------.html?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: '独', name: '独播库', meta: '页面无广告，纯净', url: q => `https://www.dbku.tv/vodsearch/-------------.html?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: 'P', name: 'PPnix', meta: '热门在线影视，速度快／纯净／无广告', url: q => `https://www.ppnix.com/cn/search/${q}--.html` },
   { group: '浮光间', note: '在线观影', icon: '泥', name: '泥视频', meta: '热门国剧，更新快，无广告', url: q => `https://www.nivod.vip/s/-------------/?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: '爱', name: '爱看机器人', meta: '全网热门的电影和电视剧榜单', url: q => `https://www1.aikanbot.com/search?q=${q}` },
-  { group: '云上集', note: '网盘资源', icon: '资', name: '资源库', meta: '7 7 8 8', url: () => 'http://xccji.top/app/index.html?id=200317xlb' },
+  { group: '浮光间', note: '在线观影', icon: '爱', name: '爱看机器人', meta: '全网热门的电影和电视剧榜单（需梯子）', url: q => `https://www1.aikanbot.com/search?q=${q}` },
+  { group: '浮光间', note: '在线观影', icon: 'P', name: 'PPnix', meta: '热门在线影视，速度快／纯净／无广告', url: q => `https://www.ppnix.com/cn/search/${q}--.html` },
+  { group: '浮光间', note: '在线观影', icon: 'L', name: 'Libvio', meta: '海外影视的老牌网站', url: q => `https://libviobd.com/search/-------------.html?wd=${q}` },
+  { group: '浮光间', note: '在线观影', icon: 'P', name: 'PKAVI', meta: '在线观影与下载', url: q => `https://www.pkavi.com/vs/-------------.html?wd=${q}` },
+  { group: '浮光间', note: '在线观影', icon: '青', name: '青空次元', meta: '网友称最夯动漫在线站', url: () => 'https://www.sorani.net/' },
+  { group: '浮光间', note: '在线观影', icon: 'N', name: '奈飞工厂', meta: '最新美剧，无广告（需梯子）', url: q => `https://www.netflixgc.com/vodsearch/-------------.html?wd=${q}` },
+  { group: '浮光间', note: '在线观影', icon: '黑', name: '黑夜影院', meta: '综合影视／资源多／无广告', url: q => `https://darkvod.com/tag/?wd=${q}&submit=` },
+  { group: '浮光间', note: '在线观影', icon: '金', name: '金牌影视', meta: '全网VIP资源（需梯子）', url: () => 'https://www.vv3nwjk.com/' },
+  { group: '浮光间', note: '在线观影', icon: '独', name: '独播库', meta: '页面无广告，纯净', url: q => `https://www.dbku.tv/vodsearch/-------------.html?wd=${q}` },
   { group: '云上集', note: '网盘资源', icon: '盘', name: '盘搜', meta: '纯净的夸克网盘资源搜索引擎', url: q => `https://pansou.de/search?q=${q}&platform=quark` },
   { group: '云上集', note: '网盘资源', icon: '追', name: '追剧网', meta: '国内外热门影视网盘资源搜索', url: q => `https://www.zhuiju.us/s/${q}.html` },
-  { group: '云上集', note: '网盘资源', icon: 'K', name: 'KKSO', meta: '夸克百度网盘搜索', url: q => `https://kkso.net/s/${q}.html` }
+  { group: '云上集', note: '网盘资源', icon: 'K', name: 'KKSO', meta: '夸克百度网盘搜索', url: q => `https://kkso.net/s/${q}.html` },
+  { group: '云上集', note: '网盘资源', icon: '谷', name: '谷哥搜', meta: '支持9种网盘的综合搜索站', url: q => `https://gugeso.com/?wd=${q}` },
+  { group: '云上集', note: '网盘资源', icon: '资', name: '资源库', meta: '7 7 8 8', url: () => 'http://xccji.top/app/index.html?id=200317xlb' },
+  { group: '译影笺', note: '字幕下载', icon: 'S', name: 'SubHD', meta: '分享下载字幕平台', url: () => 'https://subhd.tv/' },
+  { group: '译影笺', note: '字幕下载', icon: '射', name: '射手网（伪）', meta: '字幕下载', url: () => 'https://assrt.net/' }
 ];
 
 const form = document.querySelector('#searchForm');
@@ -39,11 +45,17 @@ function search(query) {
   input.value = clean; updateClearInput(); remember(clean);
   const encoded = encodeURIComponent(clean);
   const groups = [...new Set(platforms.map(platform => platform.group))];
-  results.innerHTML = `<div class="result-intro"><div class="eyebrow">SEARCHING FOR</div><h2>${escapeHtml(clean)}</h2></div>` + groups.map((group, index) => {
-    const cards = platforms.filter(platform => platform.group === group).map(platform => `<button class="platform-card" type="button" data-platform-url="${platform.url(encoded)}"><span class="platform-icon${/[A-Za-z]/.test(platform.icon) ? ' platform-icon-latin' : ''}${platform.icon === '豆' ? ' platform-icon-bean' : ''}"><span class="platform-icon-glyph">${platform.icon}</span></span><span><span class="platform-name">${platform.name}</span><span class="platform-meta">${platform.meta}</span></span></button>`).join('');
-    const note = platforms.find(platform => platform.group === group).note;
-    return `<div class="platform-section platform-section-${index + 1}"><div class="platform-label"><span class="platform-label-title">${group}</span><span class="platform-label-dot">·</span><span class="platform-label-note">${note}</span></div><div class="platform-list">${cards}</div></div>`;
-  }).join('');
+  const sections = groups.map((group, index) => {
+    const groupPlatforms = platforms.filter(platform => platform.group === group);
+    const card = platform => `<button class="platform-card" type="button" data-platform-url="${platform.url(encoded)}"><span class="platform-icon${/[A-Za-z]/.test(platform.icon) ? ' platform-icon-latin' : ''}${platform.icon === '豆' ? ' platform-icon-bean' : ''}"><span class="platform-icon-glyph">${platform.icon}</span></span><span><span class="platform-name">${platform.name}</span><span class="platform-meta">${platform.meta}</span></span></button>`;
+    const cards = groupPlatforms.map(card).join('');
+    const list = group === '浮光间'
+      ? `<div class="platform-list-split"><div class="platform-list">${groupPlatforms.slice(0, Math.ceil(groupPlatforms.length / 2)).map(card).join('')}</div><div class="platform-list">${groupPlatforms.slice(Math.ceil(groupPlatforms.length / 2)).map(card).join('')}</div></div>`
+      : `<div class="platform-list">${cards}</div>`;
+    const note = groupPlatforms[0].note;
+    return `<div class="platform-section platform-section-${index + 1}"><div class="platform-label"><span class="platform-label-title">${group}</span><span class="platform-label-dot">·</span><span class="platform-label-note">${note}</span></div>${list}</div>`;
+  });
+  results.innerHTML = `<div class="result-intro"><div class="eyebrow">SEARCHING FOR</div><h2>${escapeHtml(clean)}</h2></div><div class="platform-column platform-column-left">${sections[0]}${sections[3]}</div><div class="platform-column platform-column-resources">${sections[2]}</div><div class="platform-column platform-column-online">${sections[1]}</div>`;
   results.classList.add('show'); searchHint.hidden = true; recentSearches.hidden = true;
 }
 
