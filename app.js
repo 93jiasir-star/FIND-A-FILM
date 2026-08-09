@@ -16,8 +16,8 @@ const platforms = [
   { group: '云上集', note: '网盘资源', icon: 'K', name: 'KKSO', meta: '夸克百度网盘搜索', url: q => `https://kkso.net/s/${q}.html` },
   { group: '云上集', note: '网盘资源', icon: '谷', name: '谷哥搜', meta: '支持9种网盘的综合搜索站', url: q => `https://gugeso.com/?wd=${q}` },
   { group: '云上集', note: '网盘资源', icon: '资', name: '资源库', meta: '7 7 8 8', url: () => 'http://xccji.top/app/index.html?id=200317xlb' },
-  { group: '译影笺', note: '字幕下载', icon: 'S', name: 'SubHD', meta: '分享下载字幕平台', url: () => 'https://subhd.tv/' },
-  { group: '译影笺', note: '字幕下载', icon: '射', name: '射手网（伪）', meta: '字幕下载', url: () => 'https://assrt.net/' }
+  { group: '译影笺', note: '字幕下载', icon: 'S', name: 'SubHD', meta: '分享下载字幕平台', url: q => `https://subhd.tv/search/${q}` },
+  { group: '译影笺', note: '字幕下载', icon: '射', name: '射手网（伪）', meta: '字幕下载', url: q => `https://assrt.net/sub/?searchword=${q}` }
 ];
 
 const form = document.querySelector('#searchForm');
