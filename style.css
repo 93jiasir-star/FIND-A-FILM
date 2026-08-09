@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
 :root { --paper:#f3ede2; --ink:#27372a; --green:#294a39; --leaf:#dbe2b3; --gold:#c8a94d; --coral:#ae4e32; --line:rgba(41,74,57,.18); --faint:#737863; --secondary-label:#819484; --recent-title:rgba(41,74,57,.72); --serif:ui-serif,'Songti SC','Noto Serif SC',serif; --mono:ui-monospace,'SFMono-Regular','DM Mono',monospace; }
 * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html,body { overscroll-behavior-y:none; }
 body { margin:0; min-height:100dvh; color:#27372a; background:#f3ede2; font-family:'Noto Serif SC',serif; }
 body::before { content:''; position:fixed; z-index:-1; inset:0; background:url('xuan-paper.png') center/cover no-repeat; opacity:.42; pointer-events:none; }
 .app-shell { width:min(100%,560px); margin:0 auto; padding:calc(30px + env(safe-area-inset-top)) 24px 46px; }
@@ -16,6 +17,7 @@ input { min-width:0; flex:1; padding:9px 0; border:0; outline:0; color:var(--ink
 .results { display:none; }.results.show { display:block; }.result-intro { margin:41px 0 18px; padding-bottom:14px; border-bottom:1px solid var(--ink); }.result-intro .eyebrow { color:var(--coral); font:500 10px 'DM Mono',monospace; letter-spacing:.12em; }.result-intro h2 { margin:6px 0 0; font-size:24px; letter-spacing:-.06em; word-break:break-all; }.platform-section + .platform-section { margin-top:27px; }.platform-label { display:flex; align-items:baseline; gap:7px; margin-bottom:9px; white-space:nowrap; }.platform-label-title { color:var(--green); font:600 12px/1 'Noto Serif SC',serif; letter-spacing:.12em; }.platform-label-dot { color:var(--gold); font-size:12px; }.platform-label-note { color:var(--green); font:500 10px/1 'DM Mono','Noto Serif SC',sans-serif; letter-spacing:.05em; }.platform-list { border-top:1px solid var(--line); }.platform-card { display:flex; align-items:center; width:100%; gap:11px; min-height:62px; border:0; border-bottom:1px solid var(--line); padding:10px 3px; color:var(--ink); background:transparent; text-align:left; font:inherit; cursor:pointer; -webkit-appearance:none; appearance:none; }.platform-card:active { color:var(--coral); }.platform-icon { position:relative; display:grid; place-items:center; width:28px; height:28px; border-radius:50%; color:var(--green); background:var(--leaf); font:600 13px 'Noto Serif SC',serif; transition:color 170ms ease,background 170ms ease,border-radius 170ms ease,transform 170ms ease; }.platform-icon-glyph { display:block; line-height:1; transform:translateY(-1px); }.platform-icon-latin { font:700 12px 'Noto Serif SC',serif; letter-spacing:0; }.platform-icon-bean { font-weight:700; }.platform-card:hover .platform-icon,.platform-card:focus-visible .platform-icon { border-radius:50%; color:#fffdf8; background:#a74d3d; transform:none; }.platform-name { font-size:15px; font-weight:600; }.platform-meta { display:block; margin-top:1px; color:var(--faint); font-size:11px; }
 footer { padding:22px 0 calc(21px + env(safe-area-inset-bottom)); color:#85866d; border-top:1px solid var(--line); text-align:center; font:9px 'DM Mono',monospace; letter-spacing:.12em; } footer span { color:var(--green); font:500 11px 'Noto Serif SC',serif; letter-spacing:.08em; }.sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); } @keyframes hero-enter { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
 @media (min-width:780px) {
+  html,body { height:100dvh; overflow:hidden; }
   .app-shell { width:min(100% - 96px,1280px); padding:16px 0 66px; }
   .hero { width:min(100%,1040px); margin:0 auto; padding:0 2px 48px; }
   .brand-row { gap:13px; font-size:14px; letter-spacing:.17em; }
@@ -52,7 +54,7 @@ footer { padding:22px 0 calc(21px + env(safe-area-inset-bottom)); color:#85866d;
 }
 
 @media (min-width:780px) and (max-height:800px) {
-  .app-shell { padding-bottom:12.5px; }
+  .app-shell { padding-bottom:12px; }
   .hero { padding-bottom:38px; }
   .result-intro { margin-top:40px; }
 }
