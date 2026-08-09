@@ -5,7 +5,7 @@ const platforms = [
   { group: '浮光间', note: '在线观影', icon: 'P', name: 'PPnix', meta: '热门在线影视，速度快／纯净／无广告', url: q => `https://www.ppnix.com/cn/search/${q}--.html` },
   { group: '浮光间', note: '在线观影', icon: 'L', name: 'Libvio', meta: '海外影视的老牌网站', url: q => `https://libviobd.com/search/-------------.html?wd=${q}` },
   { group: '浮光间', note: '在线观影', icon: '泥', name: '泥视频', meta: '热门国剧，更新快，无广告', url: q => `https://www.nivod.vip/s/-------------/?wd=${q}` },
-  { group: '浮光间', note: '在线观影', icon: '毒', name: '91毒舌', meta: '最新Netflix新剧、4K高清', url: () => 'https://www.duse0.com/' },
+  { group: '浮光间', note: '在线观影', icon: '毒', name: '91毒舌', meta: '最新Netflix新剧、4K高清', url: q => `https://www.duse0.com/search?k=${q}&t=Ca8Oq8TYTaM8LK1cRLUQaQ%3D%3D` },
   { group: '浮光间', note: '在线观影', icon: 'N', name: '奈飞工厂', meta: '最新美剧，无广告', url: q => `https://www.netflixgc.com/vodsearch/-------------.html?wd=${q}` },
   { group: '浮光间', note: '在线观影', icon: '黑', name: '黑夜影院', meta: '综合影视／资源多／无广告（需梯子）', url: q => `https://darkvod.com/tag/?wd=${q}&submit=` },
   { group: '浮光间', note: '在线观影', icon: '金', name: '金牌影视', meta: '全网VIP资源', url: () => 'https://www.vv3nwjk.com/' },
